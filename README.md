@@ -26,11 +26,11 @@ The project consists of two main parts:
 fifteen-puzzle-solver/
 │
 ├─ src/ # Source code
-│ ├─ bfs.py # BFS implementation
-│ ├─ dfs.py # DFS implementation
-│ ├─ astar.py # A* implementation with heuristics
-│ ├─ puzzle.py # Puzzle class
-│ └─ utils.py # Helper functions
+│ ├─ BreadthFirstSearch.py # BFS implementation
+│ ├─ DepthLimitedSearch.py # DFS implementation
+│ ├─ Astar.py # A* implementation with heuristics
+│ ├─ program.py # Main function with saving and reading file 
+│ └─ saveInfoToFile.py # Helper function
 │
 ├─ examples/ # Sample input and output files
 │ ├─ 4x4_01_0001.txt
