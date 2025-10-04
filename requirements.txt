@@ -1,0 +1,31 @@
+
+## File Formats
+
+### Input File (Initial Puzzle State)
+- First line: `w k` – number of rows and columns.
+- Following lines: puzzle numbers (0 represents the empty space).
+
+### Output File (Solution)
+- First line: length of the solution (n), or `-1` if no solution exists.
+- Second line: sequence of letters `L, R, U, D` representing moves of the empty space.
+
+### Additional Information File
+1. Solution length
+2. Number of visited states
+3. Number of processed states
+4. Maximum recursion depth
+5. Computation time in seconds (3 decimal places)
+
+## Running the Program
+
+Example commands:
+
+```bash
+# BFS with neighbor order RDUL
+python src/bfs.py RDUL examples/4x4_01_0001.txt results/4x4_01_0001_bfs_rdul_sol.txt results/4x4_01_0001_bfs_rdul_stats.txt
+
+# DFS with neighbor order LUDR
+python src/dfs.py LUDR examples/4x4_01_0001.txt results/4x4_01_0001_dfs_ludr_sol.txt results/4x4_01_0001_dfs_ludr_stats.txt
+
+# A* with Manhattan heuristic
+python src/astar.py manh examples/4x4_01_0001.txt results/4x4_01_0001_astr_manh_sol.txt results/4x4_01_0001_astr_manh_stats.txt
